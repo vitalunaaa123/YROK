@@ -1,6 +1,5 @@
 import logging
 
-# Налаштування логування (виводимо тільки ERROR в консоль)
 logging.basicConfig(
     level=logging.ERROR,
     format='ПОМИЛКА: %(message)s'
@@ -15,7 +14,6 @@ def divide(a, b):
         logging.error(f"Сталася помилка: {e}")
         print("Щось пішло не так!")
 
-# Приклади виклику
 print("Спробуємо поділити 10 на 2:")
 divide(10, 2)
 
